@@ -2,8 +2,8 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 xmlns:android="http://schemas.android.com/apk/res/android"
-           id="com.polarcape.secureconnect"
-      version="0.1.1">
+           id="com.polarcape.plugins.secureconnect"
+      version="0.1.0">
 
     <name>Polarcape SecureConnect</name>
     <description>Cordova plugin for installing wifi certificates</description>
@@ -25,7 +25,27 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         </config-file>
 
         <source-file src="src/android/SecureConnect.java" target-dir="src/com/polarcape/secureconnect" />
-
-    </platform>
+		
+		<!-- android jar dependecies -->
+		<source-file src="src/android/libs/bcprov-jdk16-1.44.jar" target-dir="libs" />
+		
+		<!-- java classes dependecies -->	
+		<source-file src="src/android/LockType.java" target-dir="src/com/polarcape/secureconnect" />
+		<source-file src="src/android/WiFiConfiguratorApplication.java" target-dir="src/com/polarcape/secureconnect" />
+		<source-file src="src/android/certinstaller/AbstractCertificateInstaller.java" target-dir="src/com/polarcape/secureconnect/certinstaller/" />
+		<source-file src="src/android/certinstaller/Certificate.java" target-dir="src/com/polarcape/secureconnect/certinstaller/" />
+		<source-file src="src/android/certinstaller/CertificateHelper.java" target-dir="src/com/polarcape/secureconnect/certinstaller/" />
+		<source-file src="src/android/certinstaller/CertificateInstaller_APILevel10.java" target-dir="src/com/polarcape/secureconnect/certinstaller/" />
+		<source-file src="src/android/certinstaller/CertificateInstaller_APILevel18.java" target-dir="src/com/polarcape/secureconnect/certinstaller/" />
+		<source-file src="src/android/certinstaller/CertInstallerFactory.java" target-dir="src/com/polarcape/secureconnect/certinstaller/" />
+		<source-file src="src/android/util/LogUtil.java" target-dir="src/com/polarcape/secureconnect/util/" />
+		<source-file src="src/android/util/WiFiConfiguratorUtil.java" target-dir="src/com/polarcape/secureconnect/util/" />
+		<source-file src="src/android/wifiprofileconfiguration/AbstractWiFiProfileBuilder.java" target-dir="src/com/polarcape/secureconnect/wifiprofileconfiguration/" />
+		<source-file src="src/android/wifiprofileconfiguration/WiFiProfile.java" target-dir="src/com/polarcape/secureconnect/wifiprofileconfiguration/" />
+		<source-file src="src/android/wifiprofileconfiguration/WiFiProfileBuilder_APILevel04.java" target-dir="src/com/polarcape/secureconnect/wifiprofileconfiguration/" />
+		<source-file src="src/android/wifiprofileconfiguration/WiFiProfileBuilder_APILevel17.java" target-dir="src/com/polarcape/secureconnect/wifiprofileconfiguration/" />
+		<source-file src="src/android/wifiprofileconfiguration/WiFiProfileBuilder_APILevel18.java" target-dir="src/com/polarcape/secureconnect/wifiprofileconfiguration/" />
+		<source-file src="src/android/wifiprofileconfiguration/WiFiProfileBuilderFactory.java" target-dir="src/com/polarcape/secureconnect/wifiprofileconfiguration/" />
+		</platform>
     
 </plugin>
