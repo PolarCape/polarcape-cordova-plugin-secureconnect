@@ -9,7 +9,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <description>Cordova plugin for installing wifi certificates</description>
     <license>MIT</license>
     <keywords>cordova,certificates,wifi,profile</keywords>
-    <repo>https://gkopevski@bitbucket.org/polarcape/com.polarcape.secureconnect.git</repo>
+    <repo>https://github.com/PolarCape/polarcape-cordova-plugin-secureconnect.git</repo>
 
     <js-module src="www/cordovaSecureConnect.js" name="secureConnect">
         <clobbers target="secureConnect" />
