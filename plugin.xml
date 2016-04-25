@@ -27,6 +27,13 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <source-file src="src/android/SecureConnect.java" target-dir="src/com/polarcape/secureconnect" />
 		
 		<!-- android jar dependecies -->
+		<source-file src="src/android/values/values-en/strings.xml" target-dir="res/values-en/" />
+		<source-file src="src/android/values/values-fr/strings.xml" target-dir="res/values-fr/" />
+		<source-file src="src/android/values/values-it/strings.xml" target-dir="res/values-it/" />
+		<source-file src="src/android/values/values-nl/strings.xml" target-dir="res/values-nl/" />
+		<source-file src="src/android/values/values-de/strings.xml" target-dir="res/values-de/" />
+		
+		<!-- android jar dependecies -->
 		<source-file src="src/android/libs/bcprov-jdk16-1.44.jar" target-dir="libs" />
 		
 		<!-- java classes dependecies -->	

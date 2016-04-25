@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">My UPC</string>
+    <string name="certificate_name">upc</string>
+    <string name="profile_creation_Failure_msg">Wi-Fi profile with SSID \"%s\" could not be created.</string>
+    <string name="certificate_installation_progress">Installing certificate %s …</string>
+    <string name="device_not_supported">This device is currently not supported</string>
+</resources>

@@ -17,8 +17,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.security.KeyChain;
 import android.util.Log;
+import android.app.Activity;
 
-import com.lgi.myupc.ch.MyUPC;
 import com.polarcape.secureconnect.util.LogUtil;
 
  public class CertificateInstaller_APILevel18 extends AbstractCertificateInstaller{
@@ -89,7 +89,7 @@ import com.polarcape.secureconnect.util.LogUtil;
 //			if (mContext instanceof MyUPC) {
 //			mContext.startActivity(createSystemInstallIntent(cert));
 			
-				((MyUPC) mContext).startActivityForResult(
+				((Activity) mContext).startActivityForResult(
 						createSystemInstallIntent(cert)
 						,CertificateHelper.INSTALL_KEYCHAIN_CODE);
 //			}

@@ -259,9 +259,9 @@ public class CertificateHelper {
                 else  if(m.getName().trim().equals("state"))
                 	state = m;
             }
-            Object o = (getInstance.invoke(null,null));
-            b = (Boolean) isUnlocked.invoke(o, null);
-            Object o1 = state.invoke(o, null);
+            Object o = (Object)(getInstance.invoke(null));
+            b = (Boolean) isUnlocked.invoke(o);
+            Object o1 =  (Object)state.invoke(o);
 		}catch(Exception e){
 			Log.e(TAG,"isKeyStoreUnlockNeededAPI18 e = "+e.toString());
 		}

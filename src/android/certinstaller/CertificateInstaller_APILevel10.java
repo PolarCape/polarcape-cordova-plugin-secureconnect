@@ -11,7 +11,6 @@ package com.polarcape.secureconnect.certintaller;
 
 
 
-import com.lgi.myupc.ch.MyUPC;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -66,11 +65,11 @@ public class CertificateInstaller_APILevel10 extends AbstractCertificateInstalle
 	@Override
 	public void installCertificate(Certificate cert) {
 		try {
-			if (mContext instanceof MyUPC) {
+			
 				((Activity) mContext).startActivityForResult(
 						createSystemInstallIntent(cert),
 						CertificateHelper.INSTALL_KEYCHAIN_CODE);
-			}
+			
 		}catch(ActivityNotFoundException e){
 			Log.e(TAG, "ERROR: " + e.toString());
 		} 		
